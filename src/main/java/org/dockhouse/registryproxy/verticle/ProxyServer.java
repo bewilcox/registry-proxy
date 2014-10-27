@@ -41,7 +41,7 @@ public class ProxyServer extends Verticle {
         Yoke yoke2 = new Yoke(vertx);
         yoke2.use(new Router().all("/", req -> {
             System.out.println("Client receive proxing res");
-            req.response().end("This is the response");
+            req.response().end("This is the response ");
         })).listen(9999);
 
 
