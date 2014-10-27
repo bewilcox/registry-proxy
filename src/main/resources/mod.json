@@ -1,5 +1,7 @@
 {
     "main": "org.dockhouse.registryproxy.ProxyStarter",
     "description": "Proxy for private Docker registry in order to add some features",
-    "author": "Benoit Wilcox"
+    "author": "Benoit Wilcox",
+
+    "includes": "com.jetdrone~yoke~2.0.7"
 }
