@@ -1,0 +1,5 @@
+{
+    "main": "org.dockhouse.registryproxy.ProxyStarter",
+    "description": "Proxy for private Docker registry in order to add some features",
+    "author": "Benoit Wilcox"
+}

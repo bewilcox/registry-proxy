@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  # Docker Registry
+  config.vm.define "registry" do |reg|
+    reg.vm.hostname="registry-dev"
+    reg.vm.provider "docker" do |d|
+      d.image = "registry"
+      d.ports = ["5000:5000"]
+      d.env = { :SEARCH_BACKEND => "sqlalchemy" }
+      d.vagrant_vagrantfile = "./Vagrantfile.proxy"
+    end
+  end
+
+end  
